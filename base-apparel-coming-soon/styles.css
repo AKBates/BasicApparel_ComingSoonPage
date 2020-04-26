@@ -1,120 +1,92 @@
-/* General Styles & Variables */
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
 
-:root {
-	--desaturated-red: hsl(0, 36%, 70%); /*font color as well*/
-	--soft-red: hsl(0, 93%, 68%); /*error styles*/
-	--dark-grayish-red: rgb(58, 62, 65);
-	--dark-grayish-red-opacity: rgb(58, 62, 65, .2);
-	--off-white: #FFFDFE;
-	--very-light-red: #FEFAF9;
-}
-
-body {
-	margin: 0;
+/* CSS Document */
+html, body {
+	margin: auto 0;
 	padding: 0;
-	font-size: 16px;
-	font-family: 'Josefin Sans', sans-serif;
-	color: var(--desaturated-red);
 }
 
-/* Font Styles */
+	
+@media (min-width: 1440px) {
+	body {
+		background-image:url("images/bg-pattern-desktop.svg");
+		float: left;
+		width: 100%;
+	}
+}
+
+header {
+	padding: 30px;
+	float: left;
+}
+
+.text {
+	display: block;
+	text-align: center;
+	padding: 25px;
+	padding-top: 50px;
+}
 
 h1 {
-	font-size: 2.5em;
 	font-family: 'Josefin Sans', sans-serif;
-	letter-spacing: .2em;
-	margin-bottom: 0;
-	line-height: 1.1;
-}
-
-.h1-light {
-	color: var(--desaturated-red);
+	text-transform: uppercase;
 	font-weight: 300;
+	font-size: 45px;
+	color: hsl(0, 36%, 70%);
+	margin: 3px;
+	letter-spacing: 10px;
 }
 
-.h1-dark {
-	color: var(--dark-grayish-red);
-	font-weight: 400;
-	margin-top: 0;
+h2 {
+	font-family: 'Josefin Sans', sans-serif;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 45px;
+	color: hsl(0, 6%, 24%);
+	margin: 3px;
+	letter-spacing: 10px;
 }
 
 p {
-	line-height: 1.6;
-	margin-top: 30px;
-	font-weight: 400;
-	font-size: .9em;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 16px;
+	color: hsl(0, 36%, 70%);
+	margin-bottom: 0;
 }
 
-/* Layout & Elements */
-
-header {
-	background-color: var(--off-white);
-	display: flex;
-	align-items: center;
-	padding: 0px 30px;
-	height: 84px;
+.emailBox {
+	width: 300px;
+	height: 40px;
+	border-radius: 25px;
+	border: 1px solid hsl(0, 36%, 70%);
+	margin-right: 35px;
+	opacity: .6;
+	color: hsl(0, 36%, 70%);
+	font-size: 13px;
+	position: absolute;
 }
 
-.hero-image {
-	background: var(--desaturated-red) url("images/hero-mobile.jpg") no-repeat center center;
-	height: 250px;
-}
-
-.content {
-	background-color: var(--very-light-red);
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	height: 465px;
-	padding: 30px;
+.wrapper {
 	text-align: center;
-	margin: 0;
+	margin-right: 300px;
 }
 
-.hero-image img {
-	display: none;
+button {
+	width: 80px;
+	height: 45px;
+	position: absolute;
+	margin-left: 225px;
+	border-radius: 25px;
+	background-image: repeating-linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 }
 
-form {
-	width: 100%;
-	margin: 30px;
+.attribution { 
+	font-size: 11px; 
+	text-align: center; 
+	margin-top: 60px;
 }
 
-input[type=email] {
-	height: 30px;
-	border-radius: 60px;
-	background-color: var(--very-light-red);
-	border: 1px solid var(--dark-grayish-red-opacity);
-	width: 100%;
-	margin: 0px;
-	padding: 10px 20px;
-}
-
-input::placeholder {
-	color: var(--desaturated-red);
+.attribution a {
+	color: hsl(228, 45%, 44%);
 }
 
 
-/* footer styles */
-footer {
-	background-color: var(--very-light-red);
-	margin: 0;
-}
-
-.attribution {
-	font-size: 11px; text-align: center;
-	background-color: var(--very-light-red);
-}
-.attribution a { 
-	color: hsl(228, 45%, 44%); 
-}
-
-@media only screen and (min-width: 992px) {
-	.hero-image {
-	}
-	p {
-		font-size: 1em;
-	}
-
-}

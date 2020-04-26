@@ -1,33 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <!--<meta charset="UTF-8">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="styles.css" rel="stylesheet" type="text/css"/>
+ 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+ 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600&display=swap" rel="stylesheet">
+  
   <title>Frontend Mentor | Base Apparel coming soon page</title>
+	
 </head>
 <body>
-	<header>
-		<img src="./images/logo.svg" alt="Base Apparel Logo" height="24">
-	</header>
-	<div class="hero-image">
-		<img src="" alt="hero-image">
-	</div>
-	<div class="content">
-		<h1 class="h1-light">WE'RE</h1>
-		<h1 class="h1-dark">COMING SOON</h1>
-		<p>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
-		<form>
-			<input type="email" pattern="" placeholder="Email Address" required>
-			<input type="submit" name="" value="">
-		</form>
-	</div> 
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+
+	<header><img src="images/logo.svg" alt="logo"></header>
+	
+		<img src="images/hero-mobile.jpg" alt="hero">
+		
+		<div class="text">
+			<h1>We're</h1> 
+			<h2>coming</h2>
+			<h2>soon</h2>
+
+			<p>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
+		</div>
+
+		<div class="wrapper">
+			<!--<p id="email">Email Address</p>-->
+			<form>
+				<input type="email" class="emailBox" value="Email Address" required>
+				<button><img class="arrow" src="images/icon-arrow.svg" alt="arrow"></button>
+			</form>	
+		</div>
+	
+  	<footer>
+		<p class="attribution">
+		 Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+		 Coded by <a href="#">AKB</a>.
+		</p>
+  	</footer>
 </body>
 </html>
